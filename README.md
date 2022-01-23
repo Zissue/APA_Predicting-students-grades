@@ -9,7 +9,6 @@ Zixuan Sun*
 
 > **NOTE:** To install all the requirements from *requirements.txt*, please execute:  ```pip install -r requirements.txt```
 
-> Original Google Collab (only for *upc.edu*): [here](https://drive.google.com/file/d/1G0hcXaBT4cMkkIIAr2VjkaePVtzjq5co/view?usp=sharing)
 
 --------------
 
