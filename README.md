@@ -25,4 +25,4 @@ In this project, we are going to study the correlation between demographic attri
 The dataset was extracted from the *UC Irvine Machine Learning Repository}*, it is a collection of databases, domain theories, and data generators that are used by the machine learning community for the empirical analysis of machine learning algorithms. It was originated by *David Aha* and fellow graduates from *UC Irvine*.
 
 
-The full dataset can be obtained from [here](https://archive.ics.uci.edu/ml/datasets/student+performance) , this includes the **.csv** files and other descriptive documents about the dataset. Regarding the source of this dataset, we know that it was collected through school reports and questionnaires from a Portuguese school (in *Cortez \& Silva*, *2008*).
+The full dataset can be obtained from [here](https://archive.ics.uci.edu/ml/datasets/student+performance), this includes the **.csv** files and other descriptive documents about the dataset. Regarding the source of this dataset, we know that it was collected through school reports and questionnaires from a Portuguese school (in *Cortez \& Silva*, *2008*).
