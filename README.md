@@ -93,6 +93,9 @@ This project aims to predict the final grades of secondary school students based
 
 ```
 APA_Predicting-students-grades/
+├── .github/
+│   └── workflows/
+│       └── test.yml           # CI/CD workflow
 ├── code/
 │   └── Project.ipynb          # Main analysis notebook
 ├── data/
@@ -106,6 +109,7 @@ APA_Predicting-students-grades/
 ├── LICENSE                    # MIT License
 ├── CITATION.cff               # Citation information
 ├── CONTRIBUTING.md            # Contribution guidelines
+├── CHANGELOG.md               # Version history
 └── .gitignore                # Git ignore rules
 ```
 
@@ -155,6 +159,29 @@ The dataset (`data/student-mat.csv`) contains information about Portuguese secon
 - Academic grades (G1, G2, G3)
 
 For detailed attribute descriptions, see `docs/student.txt`.
+
+### Troubleshooting
+
+**Issue: Module not found errors**
+```bash
+# Solution: Ensure all dependencies are installed
+pip install -r requirements.txt
+```
+
+**Issue: Jupyter Notebook won't start**
+```bash
+# Solution: Install Jupyter explicitly
+pip install jupyter notebook
+jupyter notebook
+```
+
+**Issue: Example script runs but shows different results**
+- This is normal due to random seeds and data splitting
+- Results should be close to: R² ≈ 0.78-0.83, MAE ≈ 1.2-1.4
+
+**Issue: CSV file not found**
+- Ensure you're running commands from the project root directory
+- The data file should be at `data/student-mat.csv`
 
 ---
 
