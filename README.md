@@ -191,14 +191,14 @@ In this project, we explore the relationships between students' demographic attr
 
 ## 2. Problem Description
 
-The dataset allows for a dual approach: either regression or classification. Here, we focus on regression, where the target variable is the final grade (`G3`) of the students in mathematics. Our goal is to predict this target grade based on the various features provided in the dataset. 
+The dataset allows for a dual approach: either regression or classification. Here, we focus on regression, where the target variable is the final grade (`G3`) of the students in mathematics. Our goal is to predict this target grade based on the various features provided in the dataset.
 
 ## 3. Dataset
 
 The dataset is sourced from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/student+performance) and consists of demographic and academic information collected through school reports and student questionnaires in Portugal. The dataset includes:
 - **33 Attributes**: Mixture of categorical and numerical data.
 - **395 Samples**: Data points representing individual students.
-  
+
 Attributes include student background details, family information, and academic performance metrics (e.g., `G1`, `G2`, intermediate grades, and `G3`, the final grade). This data enables the analysis of how factors like family structure, extracurricular activities, and parental education correlate with students' academic outcomes.
 
 ## 4. Data Exploration & Preprocessing
@@ -233,7 +233,7 @@ For each model, we used GridSearchCV to optimize hyperparameters, testing settin
 
 ## 6. Evaluation and Results
 
-The **Random Forest Regressor** was chosen as the final model based on its performance on test data, achieving an R² score of 0.83. This model’s ensemble approach (bagging of decision trees) enabled it to generalize effectively across test samples. 
+The **Random Forest Regressor** was chosen as the final model based on its performance on test data, achieving an R² score of 0.83. This model’s ensemble approach (bagging of decision trees) enabled it to generalize effectively across test samples.
 
 ### Key Metrics:
 
@@ -256,7 +256,7 @@ Opportunities for future improvements and extensions include:
 - **Feature Expansion**: Further explore potential attributes, such as student engagement or additional family metrics, that may improve prediction accuracy.
 - **Classification Models**: Implement classification approaches to predict grade ranges or performance tiers, offering an alternative perspective on academic performance.
 - **Advanced Models**: Experiment with models like Gradient Boosting or deep learning frameworks for potential improvements in predictive accuracy.
-  
+
 ---
 
 ## 9. References
