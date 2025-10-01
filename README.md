@@ -1,54 +1,147 @@
-# ***README***
+# Predicting Students' Grades
+
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+
+**Machine Learning Project for Academic Performance Analysis**
 
 [Full Paper](https://github.com/Zissue/APA_Predicting-students-grades/blob/main/docs/Report_project_Leo_Zixuan.pdf) | [Data](https://github.com/Zissue/APA_Predicting-students-grades/blob/main/data/student-mat.csv) | [Code](https://github.com/Zissue/APA_Predicting-students-grades/blob/main/code/Project.ipynb)
 
+![Project Banner](https://i.imgur.com/sZ8MvdO.png)
 
-![](https://i.imgur.com/sZ8MvdO.png)
-
-**Authors**: 
-
-*Leo Arriola, Zixuan Sun*
-
-> **NOTE:** To install all the requirements from *requirements.txt*, please execute:  
-> ```pip install -r requirements.txt```
-
-
-In this project, we are going to study the correlation between demographic attributes and their relationship with academic performance. The dataset we've chosen is formed by attributes that a priori are interrelated with the academic performance of secondary school students. This includes the level of education of their parents, their parent's job and other similar attributes. The dataset allows us to treat it as a regression problem or through classification problem. In summary, the dataset has *33* attributes (some numerical and some categorical) and a total of *395* samples.
-
-
-The dataset was extracted from the *UC Irvine Machine Learning Repository}*, it is a collection of databases, domain theories, and data generators that are used by the machine learning community for the empirical analysis of machine learning algorithms. It was originated by *David Aha* and fellow graduates from *UC Irvine*.
-
-
-The full dataset can be obtained from [here](https://archive.ics.uci.edu/ml/datasets/student+performance), this includes the **.csv** files and other descriptive documents about the dataset. Regarding the source of this dataset, we know that it was collected through school reports and questionnaires from a Portuguese school (in *Cortez \& Silva*, *2008*).
+**Authors**: *Leo Arriola, Zixuan Sun*
 
 ---
 
-# **FINAL APA PROJECT**  
+## 📋 Table of Contents
 
-## *Predicting Students' Grades*
-
-### Abstract
-
-This project aims to predict the final grades of secondary school students based on demographic and academic factors. Using machine learning, we examine correlations between students' backgrounds and their academic performance, specifically in mathematics. The dataset, sourced from the UC Irvine Machine Learning Repository, includes 33 attributes from family background to school life metrics, comprising 395 samples in total. We experimented with multiple regression models to find the most predictive model, concluding that a Random Forest Regressor provided the best performance. This README provides an overview of the project steps, models, and findings.
-
----
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Problem Description](#problem-description)
-3. [Dataset](#dataset)
-4. [Data Exploration & Preprocessing](#data-exploration--preprocessing)
-5. [Model Selection and Training](#model-selection-and-training)
-6. [Evaluation and Results](#evaluation-and-results)
-7. [Conclusions](#conclusions)
-8. [Future Work](#future-work)
-9. [References](#references)
-
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Project Structure](#project-structure)
+4. [How to Use](#how-to-use)
+5. [Introduction](#introduction)
+6. [Problem Description](#problem-description)
+7. [Dataset](#dataset)
+8. [Data Exploration & Preprocessing](#data-exploration--preprocessing)
+9. [Model Selection and Training](#model-selection-and-training)
+10. [Evaluation and Results](#evaluation-and-results)
+11. [Conclusions](#conclusions)
+12. [Future Work](#future-work)
+13. [References](#references)
+14. [Contributing](#contributing)
+15. [License](#license)
 
 ---
 
-## 1. Introduction
+## 🔍 Overview
+
+This project aims to predict the final grades of secondary school students based on demographic and academic factors using machine learning techniques. We analyze correlations between students' backgrounds and their academic performance in mathematics.
+
+**Key Highlights:**
+- 📊 Dataset: 395 student samples with 33 attributes
+- 🎯 Best Model: Random Forest Regressor (R² = 0.83)
+- 📈 Mean Absolute Error: 1.23 grade points
+- 🔬 Comprehensive exploratory data analysis and feature engineering
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+
+- Python 3.7 or higher
+- pip (Python package manager)
+- Git
+
+### Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Zissue/APA_Predicting-students-grades.git
+   cd APA_Predicting-students-grades
+   ```
+
+2. **Create a virtual environment (recommended):**
+   ```bash
+   # On Windows
+   python -m venv venv
+   venv\Scripts\activate
+
+   # On macOS/Linux
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install required packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Launch Jupyter Notebook:**
+   ```bash
+   jupyter notebook
+   ```
+
+5. **Open the project notebook:**
+   Navigate to `code/Project.ipynb` in the Jupyter interface.
+
+---
+
+## 📁 Project Structure
+
+```
+APA_Predicting-students-grades/
+├── code/
+│   └── Project.ipynb          # Main analysis notebook
+├── data/
+│   └── student-mat.csv        # Student performance dataset
+├── docs/
+│   ├── Report_project_Leo_Zixuan.pdf  # Full project report
+│   └── student.txt            # Dataset attribute descriptions
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+├── LICENSE                    # MIT License
+├── CONTRIBUTING.md            # Contribution guidelines
+└── .gitignore                # Git ignore rules
+```
+
+---
+
+## 🎯 How to Use
+
+### Quick Start
+
+1. **Run the complete analysis:**
+   - Open `code/Project.ipynb` in Jupyter Notebook
+   - Run all cells sequentially (Cell → Run All)
+   - Review the outputs, visualizations, and model results
+
+2. **Explore specific sections:**
+   - **Data Preprocessing:** Cells covering data cleaning and feature engineering
+   - **Exploratory Analysis:** Visualizations and statistical summaries
+   - **Model Training:** Implementation of various regression models
+   - **Model Evaluation:** Performance metrics and comparison
+
+3. **Modify and experiment:**
+   - Try different hyperparameters in the GridSearchCV sections
+   - Add new features or preprocessing steps
+   - Test alternative models
+
+### Dataset
+
+The dataset (`data/student-mat.csv`) contains information about Portuguese secondary school students, including:
+- Demographic data (age, gender, family size)
+- Family background (parents' education and occupation)
+- School-related factors (study time, failures, support)
+- Social factors (activities, relationships, alcohol consumption)
+- Academic grades (G1, G2, G3)
+
+For detailed attribute descriptions, see `docs/student.txt`.
+
+---
+
+## 📊 Introduction
 
 In this project, we explore the relationships between students' demographic attributes (e.g., parents' education and occupation) and their academic performance in mathematics. By analyzing this dataset as a regression problem, we attempt to predict students’ final grades (G3) and identify significant factors that could influence academic outcomes. Through this analysis, we aim to understand how non-academic attributes impact students' performance and offer insights into potential interventions.
 
@@ -127,3 +220,28 @@ Opportunities for future improvements and extensions include:
 - UC Irvine Machine Learning Repository: [Student Performance Dataset](https://archive.ics.uci.edu/ml/datasets/student+performance)
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [Toward Data Science](https://towardsdatascience.com/)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
+- Report bugs
+- Suggest enhancements
+- Submit pull requests
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📧 Contact
+
+For questions or feedback, please open an issue on GitHub or contact the authors:
+- Leo Arriola
+- Zixuan Sun
+
+---
+
+**⭐ If you find this project helpful, please consider giving it a star!**
