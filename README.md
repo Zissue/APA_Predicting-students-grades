@@ -3,6 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![Test Example Script](https://github.com/Zissue/APA_Predicting-students-grades/actions/workflows/test.yml/badge.svg)](https://github.com/Zissue/APA_Predicting-students-grades/actions/workflows/test.yml)
 
 **Machine Learning Project for Academic Performance Analysis**
 
@@ -99,9 +100,11 @@ APA_Predicting-students-grades/
 ├── docs/
 │   ├── Report_project_Leo_Zixuan.pdf  # Full project report
 │   └── student.txt            # Dataset attribute descriptions
+├── example.py                 # Quick demo script
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # Project documentation
 ├── LICENSE                    # MIT License
+├── CITATION.cff               # Citation information
 ├── CONTRIBUTING.md            # Contribution guidelines
 └── .gitignore                # Git ignore rules
 ```
@@ -110,7 +113,21 @@ APA_Predicting-students-grades/
 
 ## 🎯 How to Use
 
-### Quick Start
+### Quick Start with Example Script
+
+For a quick demonstration of the core functionality, run the example script:
+
+```bash
+python example.py
+```
+
+This will:
+- Load and preprocess the student dataset
+- Train a Random Forest model
+- Display performance metrics and feature importance
+- Complete in under a minute
+
+### Full Analysis with Jupyter Notebook
 
 1. **Run the complete analysis:**
    - Open `code/Project.ipynb` in Jupyter Notebook
@@ -233,6 +250,22 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📝 Citation
+
+If you use this project in your research or work, please cite it:
+
+```bibtex
+@software{arriola_sun_2024_student_grades,
+  author = {Arriola, Leo and Sun, Zixuan},
+  title = {Predicting Students' Grades using Machine Learning},
+  year = {2024},
+  url = {https://github.com/Zissue/APA_Predicting-students-grades},
+  note = {A machine learning project that predicts secondary school students' final grades}
+}
+```
+
+Alternatively, you can use the [CITATION.cff](CITATION.cff) file.
 
 ---
 
